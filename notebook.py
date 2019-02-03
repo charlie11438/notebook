@@ -37,7 +37,7 @@ def show():
 					lb.insert('end',k+' '+v)				
 				else:
 					y.close()
-			except pkl.UnpicklingError:
+			except (pkl.UnpicklingError,FileNotFoundError):
 				pass
 		else:
 			pass
