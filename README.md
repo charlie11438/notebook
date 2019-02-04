@@ -1,4 +1,4 @@
-# notebook
+# python-note-program
 # 簡易記事程式
 ## 2019-01-31
 
