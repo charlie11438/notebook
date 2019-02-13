@@ -49,7 +49,12 @@ def show():
 def savemethod():
 	x=None
 	filename=''
-	data={'名稱':str(name.get()),'事件':str(event.get())}
+	if len(str(name.get()))==0:
+		messagebox.showinfo(title='!!!',message='名稱為空!請輸入字串!')
+		return
+	else:
+		data={'名稱':str(name.get()),'事件':str(event.get())}
+	
 	filename=name.get()+'.pkl'
 	x=open(filename,'wb')
 	pkl.dump(data,x)
@@ -59,7 +64,12 @@ def savemethod():
 
 
 def remove():
-	x=name.get()+'.pkl'
+	if len(str(name.get()))==0:
+		messagebox.showinfo(title='!!!',message='名稱為空!請輸入字串!')
+		return
+	else:
+		x=name.get()+'.pkl'
+
 	try:
 		os.remove(x)
 	except FileNotFoundError:
