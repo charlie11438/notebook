@@ -1,4 +1,4 @@
-# python-note-program
+﻿# python-note-program
 # 簡易記事程式
 ## 2019-01-31
 
@@ -17,3 +17,5 @@
 >
 >新增FileNotFoundError於顯示def
 >
+## 2019-02-13
+>新增判斷字串是否為空的判斷式
